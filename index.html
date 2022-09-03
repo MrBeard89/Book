@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Book</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <form action="" method="post" class="w-50 mx-auto text-center p-5">
+        <h2 class="mb-5">Javascript Könyvek rögzitése</h2>
+
+        <label>Könyv cime</label>
+        <input type="text" class="form-control my-3" id="title" />
+
+        <label>Könyv szerzője</label>
+        <input type="text" class="form-control my-3" id="author" />
+
+        <label>Cikkszám</label>
+        <input type="text" class="form-control my-3" id="number" />
+
+        <label>Ára</label>
+        <input type="text" class="form-control my-3" id="number" />
+
+        <label>Áfa Tartalom</label>
+        <input type="text" class="form-control my-3" id="number" />
+
+        <div class="dropdown mb-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Kategória
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Dráma</a></li>
+            <li><a class="dropdown-item" href="#">Életrajzi</a></li>
+            <li><a class="dropdown-item" href="#">Kaland</a></li>
+            <li><a class="dropdown-item" href="#">Sci-fi</a></li>
+          </ul>
+        </div>
+
+        <button id="add" class="btn btn-primary">Könyv hozzáadása</button>
+      </form>
+    </div>
+
+    <div class="container mt-3">
+      <table class="table table-striped text-center w-50 mx-auto">
+        <tr>
+          <th>Cim</th>
+          <th>Szerző</th>
+          <th>Cikkszám</th>
+          <th>Ár</th>
+        </tr>
+      </table>
+    </div>
+    <!-- Könyv adatai kiirása -->
+    <p class="eredmeny"></p>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
